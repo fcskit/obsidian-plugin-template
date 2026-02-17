@@ -1,0 +1,31 @@
+# Obsidian
+.obsidian/
+
+# Build outputs
+main.js
+main.js.map
+*.js.map
+styles.css
+
+# Node
+node_modules
+package-lock.json
+
+# Release
+release/
+
+# Development
+.vscode/
+.DS_Store
+
+# Environment
+.env
+.env.local
+
+# Debug
+debug-log.txt
+
+# Private Documentation (NOT for public GitHub)
+# All internal development documentation kept local
+docs-internal/
+

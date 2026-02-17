@@ -1,0 +1,11 @@
+{
+	"id": "obsidian-plugin-template",
+	"name": "Obsidian Plugin Template",
+	"version": "0.1.0",
+	"minAppVersion": "0.15.0",
+	"description": "A template plugin with best practices and organized structure",
+	"author": "Your Name",
+	"authorUrl": "https://github.com/yourusername",
+	"fundingUrl": "https://github.com/sponsors/yourusername",
+	"isDesktopOnly": false
+}

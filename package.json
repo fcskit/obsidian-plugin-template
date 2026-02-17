@@ -1,0 +1,34 @@
+{
+	"name": "obsidian-plugin-template",
+	"version": "0.1.0",
+	"description": "A comprehensive template for building Obsidian plugins with best practices",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs --no-watch && node copy-assets.mjs && node build-css.mjs",
+		"dev:watch": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production && node copy-assets.mjs production && node build-css.mjs",
+		"build:css": "node build-css.mjs",
+		"watch:css": "node watch-css.mjs",
+		"release": "node build-release.mjs",
+		"version": "node version-bump.mjs && git add manifest.json versions.json",
+		"clean:debug": "node scripts/clean-debug-code.mjs",
+		"clean:debug:dry": "node scripts/clean-debug-code.mjs --dry-run --verbose --all"
+	},
+	"keywords": [
+		"obsidian",
+		"obsidian-plugin",
+		"template"
+	],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^20.11.0",
+		"@typescript-eslint/eslint-plugin": "^6.19.0",
+		"@typescript-eslint/parser": "^6.19.0",
+		"builtin-modules": "^3.3.0",
+		"esbuild": "0.19.11",
+		"obsidian": "latest",
+		"tslib": "2.6.2",
+		"typescript": "5.3.3"
+	}
+}

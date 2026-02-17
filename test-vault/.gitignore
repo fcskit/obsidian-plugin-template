@@ -1,0 +1,13 @@
+# Obsidian workspace settings (user-specific)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian cache
+.obsidian/cache
+
+# Hot-reload plugin files are committed
+# Plugin files are built and should not be committed from vault
+# (They're built from src/ by the build system)
+
+# Keep: .hotreload file (committed)
+# Keep: hot-reload plugin files (committed)

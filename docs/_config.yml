@@ -1,0 +1,98 @@
+# GitHub Pages Configuration for Obsidian Plugin Template
+theme: jekyll-theme-cayman
+title: Obsidian Plugin Template
+description: A comprehensive template for building Obsidian plugins with best practices
+show_downloads: true
+github:
+  repository_url: https://github.com/fcskit/obsidian-plugin-template
+  is_project_page: true
+  owner_name: fcskit
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: User Guide
+    url: /user/
+  - title: Developer Docs
+    url: /developer/
+  - title: Features
+    url: /features/
+  - title: Examples
+    url: /examples/
+
+# Exclude files from GitHub Pages
+# Only exclude truly internal documentation - docs-internal/ is already gitignored
+exclude:
+  # System files
+  - .DS_Store
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  # Build files (not in docs/ but good practice)
+  - "*.json"
+  - release/
+  - src/
+  - test-vault/
+  - scripts/
+  # Note: docs-internal/ is already excluded via .gitignore
+  # so it won't even be in the repository
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+  auto_ids: true
+  toc_levels: 1..3
+
+# Plugin settings
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+
+# Relative links settings
+relative_links:
+  enabled: true
+  collections: false
+
+# Optional front matter
+optional_front_matter:
+  remove_originals: false
+
+# Titles from headings
+titles_from_headings:
+  enabled: true
+  strip_title: true
+  collections: false
+
+# Collections (optional - for organizing documentation)
+collections:
+  features:
+    output: true
+    permalink: /features/:path/
+  examples:
+    output: true
+    permalink: /examples/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "features"
+      type: "features"
+    values:
+      layout: "default"
+  - scope:
+      path: "examples"
+      type: "examples"
+    values:
+      layout: "default"
