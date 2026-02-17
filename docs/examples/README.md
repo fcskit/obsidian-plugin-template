@@ -4,7 +4,19 @@ This directory contains code examples demonstrating how to use various features 
 
 ## Available Examples
 
-- [Logger Usage](logger-usage.ts) - Demonstrates proper use of the logging system
+### Logger System
+
+- **[Logger Usage](logger-usage.ts)** - Demonstrates proper use of the logging system
+  - Component-based logging
+  - Different log levels (debug, info, warn, error)
+  - Tag-based filtering
+  - Production debug elimination
+  - File logging
+
+Run with:
+```bash
+npx tsx docs/examples/logger-usage.ts
+```
 
 ## Using These Examples
 

@@ -6,6 +6,7 @@ Detailed documentation for specific features and systems in the plugin template.
 
 ### Debug System
 Documentation for the debug code elimination system:
+- **[Overview](debug-system/README.md)** - Debug system introduction *(coming soon)*
 - **[Build Size Comparison](debug-system/build-size-comparison.md)** - Before/after size analysis
 - **[Elimination Summary](debug-system/elimination-summary.md)** - How debug elimination works
 - **[Code Elimination Guide](debug-system/code-elimination.md)** - Complete guide to debug code elimination
@@ -13,13 +14,12 @@ Documentation for the debug code elimination system:
 
 ### Logger System
 Documentation for the logging system:
+- **[Logger Overview](logger/README.md)** - Complete logger system guide
 - **[Tag-Based Filtering](logger/tag-based-filtering.md)** - Advanced tag-based debug filtering
 
 ### Build System
-_(Documentation coming soon)_
-- Build modes (dev, dev:watch, build)
-- CSS compilation
-- Release management
+Documentation for the build and compilation system:
+- **[Build System Overview](build-system/README.md)** - Build modes, CSS compilation, and release management
 
 ## Purpose
 
